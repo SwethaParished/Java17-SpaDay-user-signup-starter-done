@@ -4,13 +4,23 @@ import java.util.ArrayList;
 
 public class Client {
 
+    private  String name;
     private String skinType;
     private String nailService;
     private ArrayList<String> appropriateFacials = new ArrayList<>();
 
-    public Client(String skinType, String nailService) {
+    public Client(String name, String skinType, String nailService) {
+        this.name = name;
         this.skinType = skinType;
         this.nailService = nailService;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getSkinType() {
